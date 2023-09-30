@@ -1,0 +1,214 @@
+.header_main_container{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.header_container{
+    position: fixed;
+    width: 95%;
+    background-color: black;
+    background-size: fill;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    /* border: 2px solid red; */
+}
+
+.menu_icon{
+    display: none !important;
+    color: white;
+    cursor: pointer;
+}
+
+/* .menu_icon_for_videodetails{
+    color: white;
+    cursor: pointer;
+} */
+
+.close_icon{
+    color: white;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.logo_style{
+    background-image: url('../images/yt-logo.png');
+    height: 30px;
+    width: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.middle_section{
+    height: 40px;
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.input_css_before_click{
+    height: 40px;
+    width: 400px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.507);
+    font-size: 15px;
+    outline: none;
+    padding: 0 20px;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.input_css_on_click{
+    height: 40px;
+    width: 400px;
+    border: 1px solid rgba(62, 49, 250, 0.973);
+    border-left: none;
+    font-size: 15px;
+    outline: none;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.middle_section>button{
+    height: 40px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.507);
+    border-left: none;
+    font-size: 15px;
+    outline: none;
+    padding: 0 20px;
+    background-color: rgba(94, 87, 87, 0.534);
+    color: white;
+    cursor: pointer;
+}
+
+.searchicon_before_click{
+    height: 40px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border: 1px solid rgba(62, 49, 250, 0.973);
+    border-right: none;
+    font-size: 15px;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.right_section{
+    height: 40px;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.video_icon{
+    height: 25px !important;
+    width: 25px !important;
+    cursor: pointer;
+    color: white;
+
+}
+
+.bell_icon{
+    height: 25px!important;
+    width: 25px !important;
+    cursor: pointer;
+    color: white;
+}
+
+.right_section>img{
+    height: 35px;
+    width: 35px;
+    object-fit: contain;
+    border-radius: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1023px) {
+    .middle_section{
+        height: 40px;
+        width: 400px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        /* border: 2px solid red; */
+    }
+    
+    .right_section{
+        height: 40px;
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .middle_section{
+        height: 40px;
+        width: 300px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        /* border: 2px solid red; */
+    }
+  }  
+
+  @media screen and (max-width: 540px) {
+    .middle_section{
+        height: 40px;
+        width: 200px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        /* border: 2px solid red; */
+    }
+  }  
+  @media screen and (max-width: 425px) {
+    .right_section{
+        height: 40px;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bell_icon{
+        display: none !important;
+    }
+    .video_icon{
+        display: none !important;
+    }
+
+    .menu_icon{
+        display:block !important;
+        color: white;
+    }
+
+    .logo_style{
+        background-image: url('../images/yt-logo-mobile.png');
+        height: 25px;
+        width: 50px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
+    }
+  }  

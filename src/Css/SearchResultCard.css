@@ -1,0 +1,157 @@
+.sr_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+    /* border: 2px solid red; */
+}
+
+.sr_videocard_image{
+    position: relative;
+    height: 190px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.sr_videocard_image>img{
+    height: 190px;
+    width: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.sr_video_lenght{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    height: 25px;
+    width: 70px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-size: 13px;
+    color: white;
+}
+
+.sr_rightsection{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+}
+
+.sr_title{
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.profile_name_subscriber_container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.sr_name_or_badge{
+    display: flex;
+    margin-top: 10px;
+}
+
+.sr_channel_name{
+    font: 15px;
+}
+
+.sr_video_views{
+    font-size: 14px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.discription_container{
+    height: 35px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    /* border: 1px solid red; */
+}
+
+@media screen and (max-width: 953px) {
+
+    .sr_videocard_image{
+        position: relative;
+        height: 160px;
+        width: 250px;
+        object-fit: cover;
+    }
+
+    .sr_videocard_image>img{
+        height: 160px;
+        width: 250px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .sr_rightsection{
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    margin-top: 10px;
+}
+}
+
+@media screen and (max-width: 768px) {
+
+    .sr_videocard_image{
+        position: relative;
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .sr_videocard_image>img{
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+ 
+    .sr_container{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        /* border: 2px solid red; */
+    }
+
+    .profile_name_subscriber_container{
+        display: none;
+    }
+    .discription_container{
+        height: 15px;
+        width: 100%;
+        font-size: 13px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        /* border: 1px solid red; */
+    }
+
+    .sr_title{
+        font-size: 15px;
+        line-height: 18px;
+    }
+    
+}

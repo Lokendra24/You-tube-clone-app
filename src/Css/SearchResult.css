@@ -1,0 +1,35 @@
+.searchresult_container{
+    width: 95%;
+    display: flex;
+}
+
+.searchresult_right_container{
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   padding: 20px;
+   gap: 20px;
+   margin-left: 230px;
+   margin-top: 75px;
+    /* border: 1px solid white; */
+}
+
+@media screen and (max-width: 768px) {
+
+    .searchresult_right_container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        padding: 20px;
+        gap: 10px;
+        margin-left: 0px;
+        margin-top: 75px;
+         /* border: 1px solid white; */
+     }
+
+    .sr_leftnav_visiblity{
+          display: none;
+    }
+
+}
